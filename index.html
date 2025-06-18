@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDG Predictor Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BDG Predictor Tool</h1>
+        <div class="input-group">
+            <label>Amount:</label>
+            <input type="number" id="amount" />
+        </div>
+        <div class="input-group">
+            <label>Number (1–9):</label>
+            <input type="number" id="number" min="1" max="9" />
+        </div>
+        <div class="input-group">
+            <label>Color:</label>
+            <select id="color">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Size:</label>
+            <select id="size">
+                <option value="Big">Big (5-9)</option>
+                <option value="Small">Small (1-4)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Actual Result (Number):</label>
+            <input type="number" id="actual" min="1" max="9" />
+        </div>
+        <button onclick="submitPrediction()">Submit</button>
+        <div id="message"></div>
+        <h2>Summary</h2>
+        <div id="summary"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
